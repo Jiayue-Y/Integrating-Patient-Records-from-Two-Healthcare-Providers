@@ -1,19 +1,9 @@
-/**
- * This class initialize Nodes for a double linked list.
- */
 public class Node<E> {
+    E data;
     Node<E> next;
-    Node<E> prev;
-    E val;
 
-    /**
-     * Constructor.
-     *
-     * @param val An element to be stored in a Node
-     */
-    public Node(E val) {
+    public Node(E data) {
+        this.data = data;
         next = null;
-        prev = null;
-        this.val = val;
     }
 }
